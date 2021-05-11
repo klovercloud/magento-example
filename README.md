@@ -3,7 +3,7 @@
 
 #### Step 1 - Local Setup
 - Download magento in your local machine 
-- Copy the all files from app-files dir in the root directory of your magento project. Put your public & private keys in the auth.json file
+- Copy the all files from app-files dir in the root directory of your magento project. Put your public & private keys in the auth.json file. You can generate the key from https://marketplace.magento.com/customer/accessKeys/
 - Push your magento project to github / bitbucket / gitlab
 
 ###
