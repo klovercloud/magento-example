@@ -54,7 +54,7 @@ bin/magento cron:run --group index
 ```
 
 ####
-###### Installation Completed. Try to access your magento app now through browser.
+##### Installation Completed. Try to access your magento app now through browser.
 
 ###
 #### Cheat Sheet
