@@ -43,8 +43,14 @@ php bin/magento setup:install \
 --currency=USD \
 --timezone=Asia/Dhaka \
 --session-save=files \
+--search-engine=elasticsearch7 \
+--elasticsearch-host=YOUR_ELASTIC_SEARCH_ENDPOINT \
+--elasticsearch-port=YOUR_ELASTIC_SEARCH_PORT \
+--elasticsearch-enable-auth=1 \
+--elasticsearch-username=YOUR_ELASTIC_SEARCH_USERNAME \
+--elasticsearch-password=YOUR_ELASTIC_SEARCH_PASSWORD \
 --use-sample-data \
---disable-modules='Magento_Elasticsearch,Magento_Elasticsearch6,Magento_Elasticsearch7,Magento_TwoFactorAuth' // if avoiding elastic-search & 2fa while installation
+--disable-modules='Magento_TwoFactorAuth' // if avoiding 2fa while installation. You can also add 'Magento_Elasticsearch,Magento_Elasticsearch6,Magento_Elasticsearch7' here to skip elasticsearch 
 ```
 
 
