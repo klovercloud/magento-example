@@ -3,6 +3,7 @@ FROM container-registry.console.klovercloud.com/klovercloud/php-7.4-apache2-mage
 WORKDIR $TEMP_APP_HOME
 
 COPY . .
+COPY php.ini /usr/local/etc/php/php.ini
 
 #install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --version=1.10.15
