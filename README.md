@@ -18,8 +18,8 @@
 - On board your magento application though git in klovercloud
 - Select PHP as language
 - Select atleast 4 vCPU & 8GB RAM
-- Select atleast 10GB Persistent Volume (Mount Paths: /home/klovercloud/vol/app/etc;/home/klovercloud/vol/pub/media)
-- Select atleast 4GB In-Memory Volume (Non-Persistent) (Mount Path: /home/klovercloud/app)
+- Select atleast 10GB Persistent Volume (Mount Paths: `/home/klovercloud/vol/app/etc;/home/klovercloud/vol/pub/media`)
+- Select atleast 4GB In-Memory Volume (Non-Persistent) (Mount Path: `/home/klovercloud/app`)
 - Create application
 - Build
 - Import required Environment Variables & Secrets for the application in KloverCloud for auto magento installation on first deployment. Sample yaml files are given under `/kcp` directory. Edit them with your values before importing them in KloverCloud.
