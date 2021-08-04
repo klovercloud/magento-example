@@ -1,18 +1,25 @@
-FROM container-registry.console.klovercloud.com/klovercloud/php-7.4-apache2-magento-base-image:v1.0.0
+FROM klovercloud/php-7.4-apache2-magento-base-image:v1.0.1
 
 WORKDIR $TEMP_APP_HOME
 
 COPY . .
-COPY php.ini /usr/local/etc/php/php.ini
+
+RUN chown -R klovercloud:klovercloud $TEMP_APP_HOME
+RUN chown -R klovercloud:klovercloud $APP_HOME
 
 #install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --version=1.10.15
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --version=2.1.4
 
 # install all PHP dependencies
 RUN composer install --no-interaction
 
+COPY php.ini /usr/local/etc/php/php.ini
+
 RUN chmod +x init.sh
 RUN sed -i 's/\r$//' init.sh
+
+RUN chmod +x scripts/*
+RUN sed -i 's/\r$//' scripts/*
 
 #For Apache Log Aggregation
 RUN sed -i -r 's@ErrorLog .*@ErrorLog /dev/stderr@i' /etc/apache2/apache2.conf
