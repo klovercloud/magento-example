@@ -19,7 +19,7 @@
 - Select PHP as language
 - Select atleast 4 vCPU & 8GB RAM
 - Select atleast 10GB Persistent Volume (Mount Paths: `/home/klovercloud/vol/app/etc;/home/klovercloud/vol/pub/media`).\
-(To persistently store magento config.php, env.php & public media files for the the appliation instances as a shared basis.)
+(To persistently store magento config.php, env.php & public media files for the appliation instances on a shared basis.)
 - Select atleast 4GB In-Memory Volume (Non-Persistent) (Mount Path: `/home/klovercloud/app`).\
 (For fast compilation, deployment & serving of each application instances.)
 - Create application
