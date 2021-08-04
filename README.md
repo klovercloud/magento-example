@@ -1,4 +1,4 @@
-# Installing and Running Magento in KloverCloud
+# Installing and Running Magento (Production Grade) in KloverCloud
 ###
 
 #### Step 1 - Local Setup
