@@ -41,3 +41,8 @@ echo
 echo
 echo "[INFO] Setting deploy mode to Production ...."
 php $APP_HOME/bin/magento deploy:mode:set production
+
+echo
+echo
+echo "[INFO] Starting Magento Index Cron ...."
+php $APP_HOME/bin/magento cron:run --group index
