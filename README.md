@@ -26,11 +26,11 @@
 - Build
 - Import required Environment Variables & Secrets for the application in KloverCloud for auto magento installation on first deployment. Sample yaml files are given under `/kcp` directory. Edit them with your values before importing them in KloverCloud.
 - Deploy
-- Enjoy
 
 ###
 #### Step 4 - Terminal Access
 - Access the Terminal of the deployed instance though KloverCloud Console (Application -> Overview -> Access Terminal)
+- Install your Magento Application using the `Install Magento` command given the `Cheat Sheet` section below.
 
 
 ####
