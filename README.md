@@ -30,7 +30,7 @@
 ###
 #### Step 4 - Terminal Access
 - Access the Terminal of the deployed instance though KloverCloud Console (Application -> Overview -> Access Terminal)
-- Install your Magento Application using the `Install Magento` command given the `Cheat Sheet` section below.
+- Install your Magento Application by executing this script. `./scripts/setup.sh`
 
 
 ####
@@ -50,7 +50,7 @@ php bin/magento setup:install \
 --base-url=https://YOUR_DOMAIN \
 --base-url-secure=https://YOUR_DOMAIN \
 --backend-frontname=admin \
---db-host=YOUR_MYSQL_ENDPOINT \
+--db-host=YOUR_MYSQL_ENDPOINT:YOUR_MYSQL_PORT \
 --db-name=YOUR_DB_NAME \
 --db-user=YOUR_MYSQL_USERNAME \
 --db-password=YOUR_MYSQL_PASSWORD \
